@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bilder</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="images/x-icon">
+    <meta name="keywords" content="Skill, Deutsch, Barkeeper, Barista, Bar Manager, Hotel, Arbeitsmöglichkeit, Job, Lebenslauf, Österreich">
+  </head>
+  <body>
+  <div id="loader"></div>
+  <script>
+    $(window).on("load",function(){
+      $("#loader").fadeOut("slow");
+    });
+  </script>
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="https://www.barkeeper.work/#home">Pe<span>T</span>or</a></div>
+      <ul class="menu">
+        <li><a href="https://www.barkeeper.work/#home" target="_self">Home</a></li>
+        <li><a href="https://www.barkeeper.work/#about" target="_self">Über mich</a></li>
+        <li><span><a href="https://www.barkeeper.work/gallery.html" target="_self">Bilder</a></span></li>
+        <li><a href="https://www.barkeeper.work/#skills" target="_self">Fähigkeiten</a></li>
+        <li><a href="https://www.barkeeper.work/#team" target="_self">Zertifikate</a></li>
+        <li><a href="https://www.barkeeper.work/#contact" target="_self">Kontakt</a></li>
+        <li><a href="https://www.linkedin.com/in/petor/" target="_self" <i class="fab fa-linkedin-in"></a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+    <div class="gallery-section">
+      <div class="inner-width">
+        <div class="border"></div>
+        <div class="gallery">
+
+
+          <a href="gallery/2.jpg" class="image">
+            <img src="gallery/2.jpg" alt="">
+          </a>
+
+          <a href="gallery/3.jpg" class="image">
+            <img src="gallery/3.jpg" alt="">
+          </a>
+
+          <a href="gallery/4.jpg" class="image">
+            <img src="gallery/4.jpg" alt="">
+          </a>
+
+          <a href="gallery/5.jpg" class="image">
+            <img src="gallery/5.jpg" alt="">
+          </a>
+
+          <a href="gallery/6.jpg" class="image">
+            <img src="gallery/6.jpg" alt="">
+          </a>
+
+          <a href="gallery/7.jpg" class="image">
+            <img src="gallery/7.jpg" alt="">
+          </a>
+
+          <a href="gallery/8.jpg" class="image">
+            <img src="gallery/8.jpg" alt="">
+          </a>
+
+          <a href="gallery/9.jpg" class="image">
+            <img src="gallery/9.jpg" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  <script>
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
+  </script>
+
+
+  <!-- footer section start -->
+  <footer>
+    <span><a href="https://www.barkeeper.work/privacypolicy.html" target="_self">Privacy Policy</a></span> |
+    <span><a href="https://www.barkeeper.work/cookiespolicy.html" target="_self">Cookies Policy</a><p></p>
+            <span class="far fa-copyright"></span> 2020-2021 Petor - Alle Rechte vorbehalten</span>
+  </footer>
+
+  <script language="JavaScript">
+    /**
+     * Disable right-click of mouse, F12 key, and save key combinations on page
+     * By Arthur Gareginyan (https://www.arthurgareginyan.com)
+     * For full source code, visit https://mycyberuniverse.com
+     */
+    window.onload = function() {
+      document.addEventListener("contextmenu", function(e){
+        e.preventDefault();
+      }, false);
+      document.addEventListener("keydown", function(e) {
+        //document.onkeydown = function(e) {
+        // "I" key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+          disabledEvent(e);
+        }
+        // "J" key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+          disabledEvent(e);
+        }
+        // "S" key + macOS
+        if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+          disabledEvent(e);
+        }
+        // "U" key
+        if (e.ctrlKey && e.keyCode == 85) {
+          disabledEvent(e);
+        }
+        // "F12" key
+        if (event.keyCode == 123) {
+          disabledEvent(e);
+        }
+      }, false);
+      function disabledEvent(e){
+        if (e.stopPropagation){
+          e.stopPropagation();
+        } else if (window.event){
+          window.event.cancelBubble = true;
+        }
+        e.preventDefault();
+        return false;
+      }
+    };
+  </script>
+  <script src="script.js"></script>
+  </body>
+</html>
