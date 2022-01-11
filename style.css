@@ -15,6 +15,7 @@ html{
 }
 .google{
     width: 250px;
+    height: auto;
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
