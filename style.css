@@ -71,7 +71,7 @@ section .title{
     font-weight: 500;
     margin-bottom: 20px;
     padding-bottom: 60px;
-    font-family: 'myThirdFont','myFirstFont', 'Ubuntu', sans-serif;
+    font-family: 'myFirstFont', 'Ubuntu', sans-serif;
 }
 section .title::before{
     content: "";
@@ -118,16 +118,16 @@ section .title::after{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
-    font-family: 'myFirstFont', 'Ubuntu', sans-serif;
+    font-family: 'myThirdFont','myFirstFont', 'Ubuntu', sans-serif;
 }
 .navbar .logo a span{
     color: crimson;
     transition: all 0.3s ease;
-    font-family: 'myFirstFont', 'Ubuntu', sans-serif;
+    font-family: 'myThirdFont','myFirstFont', 'Ubuntu', sans-serif;
 }
 .navbar.sticky .logo a span{
     color: #fff;
-    font-family: 'myFirstFont', 'Ubuntu', sans-serif;
+    font-family: 'myThirdFont','myFirstFont', 'Ubuntu', sans-serif;
 }
 .navbar .menu li{
     list-style: none;
