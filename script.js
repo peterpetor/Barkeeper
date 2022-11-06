@@ -71,21 +71,4 @@ $(document).ready(function(){
     });
 });
 
-/*
-Portfolio links
- */
-
-function raklikkelt1() {
-    window.open("https://www.petor.net/gallery.html", "_self");
-}
-
-function raklikkelt2() {
-    window.open("https://www.petor.net/video.html", "_self");
-}
-
-function raklikkelt3() {
-    window.open("https://play.google.com/store/apps/dev?id=4710023491977711195", "_blank");
-}
-
-/*Loader*/
 
