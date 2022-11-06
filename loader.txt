@@ -4,3 +4,10 @@
         $("#loader2").fadeOut("slow");
     });
 </script>
+
+ <div id="loader"></div>
+  <script>
+    $(window).on("load",function(){
+      $("#loader").fadeOut("slow");
+    });
+  </script>
