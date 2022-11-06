@@ -1,0 +1,6 @@
+<div id="loader2"></div>
+<script>
+    $(window).on("load",function(){
+        $("#loader2").fadeOut("slow");
+    });
+</script>
